@@ -16,15 +16,18 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         timer = 0f; //03 
+        // Debug.Log(timer);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Debug.Log(timer);
         timer += Time.deltaTime;//4
+        // Debug.Log(Time.deltaTime);
         if(timer > timeBetweenSpawns)
         {
-            timer += 0f;
+            timer = 0f;//my mistake was here +=
             //spawn
             Transform chosenTransform = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
             GameObject spawnedEnemy = Instantiate(enemyPrefab, chosenTransform.position, chosenTransform.rotation);

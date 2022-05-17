@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8012370822247051379}
   - component: {fileID: 3095128983300114536}
   - component: {fileID: 4398649614344054206}
+  - component: {fileID: 5770515913025409143}
   m_Layer: 0
   m_Name: EnergyProjectile
   m_TagString: Untagged
@@ -112,3 +113,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5770515913025409143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603828914520137029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0603acd8610e38f41bff6d63079d2c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitParticlesPrefab: {fileID: 1728737681994703939, guid: d139407780c2faa40b84332261e8f9a0, type: 3}
+  maxLifetime: 10
