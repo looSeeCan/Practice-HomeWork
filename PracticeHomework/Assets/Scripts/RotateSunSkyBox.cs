@@ -10,7 +10,7 @@ public class RotateSunSkyBox : MonoBehaviour //this script is attached to the Di
     //     Quaternion newRot = Quaternion.Euler(passedSlider.value, transform.rotation.y, transform.rotation.z);
     //     transform.rotation = newRot;
     // }
-    // // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         
