@@ -6,7 +6,9 @@ public class CarRotator : MonoBehaviour
 {
     public void RotateCar(float sliderValue)
     {
-        Vector3 newRotation = new Vector3(0, sliderValue, 0);
+        Vector3 newRotation = new Vector3(0, sliderValue, 0); 
+        // Debug.Log($"{newRotation}");
+        Debug.Log($"{sliderValue}");
         transform.rotation = Quaternion.Euler(newRotation);
     }
     // Start is called before the first frame update
